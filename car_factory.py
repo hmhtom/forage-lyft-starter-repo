@@ -8,26 +8,31 @@ from car import Car
 
 class CarFactory:
 
+    @staticmethod
     def create_calliope(current_mileage, last_service_mileage, current_date, last_service_date):
         calliope = Car(CapuletEngine(current_mileage, last_service_mileage),
                        SindlerBattery(current_date, last_service_date))
         return calliope
 
+    @staticmethod
     def create_glissade(current_mileage, last_service_mileage, current_date, last_service_date):
         glissade = Car(WilloughbyEngine(current_mileage, last_service_mileage),
                        SindlerBattery(current_date, last_service_date))
         return glissade
 
+    @staticmethod
     def create_rorschach(current_mileage, last_service_mileage, current_date, last_service_date):
         rorschach = Car(WilloughbyEngine(current_mileage, last_service_mileage),
                         NubbinBattery(current_date, last_service_date))
         return rorschach
 
+    @staticmethod
     def create_thovex(current_mileage, last_service_mileage, current_date, last_service_date):
         thovex = Car(CapuletEngine(current_mileage, last_service_mileage),
                      NubbinBattery(current_date, last_service_date))
         return thovex
 
+    @staticmethod
     def create_palindrome(warning_light_is_on, current_date, last_service_date):
         palindrome = Car(SternmanEngine(warning_light_is_on),
                          SindlerBattery(current_date, last_service_date))
