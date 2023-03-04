@@ -1,2 +1,2 @@
-# Starter Repo
-This repo has everything you need to get started on the program, good luck!
+# Lyft Backend Experience Program
+This is the repository work with forge-lyft on their backend developement experience program
