@@ -9,7 +9,7 @@ class SindlerBattery(Battery):
 
     def needs_service(self):
         service_threshold_date = self.last_service_date.replace(
-            year=self.last_service_date.year + 4)
+            year=self.last_service_date.year + 3)
         if service_threshold_date < self.current_date:
             return True
         else:

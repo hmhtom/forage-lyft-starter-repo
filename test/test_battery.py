@@ -8,14 +8,14 @@ class TestBattery(unittest.TestCase):
     # Test Sindle Battery
     def test_sindler_battery_should_be_serviced(self):
         last_service_date = datetime.today().date().replace(
-            year=datetime.today().date().year - 3)
+            year=datetime.today().date().year - 4)
 
         battery = SindlerBattery(last_service_date)
         self.assertTrue(battery.needs_service())
 
     def test_sindler_battery_should_not_be_serviced(self):
         last_service_date = datetime.today().date().replace(
-            year=datetime.today().date().year - 1)
+            year=datetime.today().date().year - 2)
 
         battery = SindlerBattery(last_service_date)
         self.assertFalse(battery.needs_service())

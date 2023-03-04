@@ -3,6 +3,8 @@ from car_component.engine.willoughby_engine import WilloughbyEngine
 from car_component.engine.sternman_engine import SternmanEngine
 from car_component.battery.nubbin_battery import NubbinBattery
 from car_component.battery.sindler_battery import SindlerBattery
+from car_component.tire.carrigan_tire import CarriganTire
+from car_component.tire.octoprime_tire import OctoprimeTire
 from car import Car
 
 
